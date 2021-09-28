@@ -4,10 +4,9 @@
   "description": "Backend da Aplicação Desenvolvida para o TCC",
   "main": "index.js",
   "scripts": {
-    "deploy:heroku": "git push heroku master",
-    "deploy:v1": "git push heroku v1:master",
+    "build": "npx tsc --build",
     "doc": "npx apidoc -o apidoc/ -i docs/ ",
-    "start": "node ./dist/index.js",
+    "prod": "npm run build && node ./dist/index.js",
     "dev": "nodemon --watch './src' --exec 'ts-node ./src/index.ts' -e ts --inspect=0.0.0.0"
   },
   "engines": {
