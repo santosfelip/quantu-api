@@ -1,0 +1,7 @@
+*.logs
+node_modules
+cert.json
+dist
+.env
+apidoc
+certs/
